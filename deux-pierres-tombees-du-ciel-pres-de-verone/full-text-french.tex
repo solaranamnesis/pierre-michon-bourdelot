@@ -1,0 +1,85 @@
+\documentclass[a4paper, 11pt, oneside, polutonikogreek, french]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+
+% Load encoding definitions (after font package)
+
+\usepackage{textalpha}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
+% Babel package:
+\usepackage[french]{babel}
+
+% With XeTeX$\$LuaTeX, load fontspec after babel to use Unicode
+% fonts for Latin script and LGR for Greek:
+\ifdefined\luatexversion \usepackage{fontspec}\fi
+\ifdefined\XeTeXrevision \usepackage{fontspec}\fi
+
+% "Lipsiakos" italic font `cbleipzig`:
+\newcommand*{\lishape}{\fontencoding{LGR}\fontfamily{cmr}%
+		       \fontshape{li}\selectfont}
+\DeclareTextFontCommand{\textli}{\lishape}
+
+\usepackage{booktabs}
+\setlength{\emergencystretch}{15pt}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\begin{document}
+\begin{titlepage} % Suppresses headers and footers on the title page
+	\centering % Centre everything on the title page
+	%\scshape % Use small caps for all text on the title page
+
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{1\baselineskip} % Whitespace above the title
+	
+	{\scshape\Huge De deux pierres tombées\\ du Ciel prés de Vérone,\\ diverses opinions là-dessous.}
+	
+	\vspace{1\baselineskip} % Whitespace above the title
+
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{1\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	{\scshape \Large Par Pierre Michon Bourdelot.} % Subtitle or further description
+	
+	\vspace*{1\baselineskip} % Whitespace under the subtitle
+	
+        {\scshape } % Subtitle or further description
+    
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+        \vspace*{\fill}
+
+	\vspace{1\baselineskip}
+
+	{\small\scshape Paris 1672.}
+	
+	{\small\scshape{Chez Thomas Moette, au bas de la rue de la Harpe, à S. Alexis.}}
+	
+	\vspace{0.5\baselineskip} % Whitespace after the title block
+
+        \scshape Internet Archive Online Edition  % Publication year
+	
+	{\scshape\small Utilisation non commerciale --- Partage dans les mêmes conditions 4.0 International} % Publisher
+\end{titlepage}
+\setlength{\parskip}{1mm plus1mm minus1mm}
+\clearpage
+\paragraph{}
+Un morceau de pierre, que Périandre montra à toute l'Assemblée, fit l'ouverture de cette Conférence. Il avait este apporté par le Seigneur Adriano Italien, personnage très versé dans toutes fortes de sciences, particulièrement dans l'Astronomie, et dans l'Astrologie ; Ce docte Italien dit que c'était le fragment d'une pierre, qui tomba prés de Vérone ; qu'il en tomba deux, dont l'une pesait trois cens liures, et l'antre deux cens ; qu'elles tombèrent pendant la nuit, dans le temps le plus doux et le plus serein du monde ; qu'elles paraissaient toutes en feu, et venaient d'enhault, mais de biais ; et qu'elles faisaient un bruit épouvantable. Vous pouvez bien juger, poursuivit-il, que ce prodige étonna furieusement trois ou quatre cents personnes qui le virent, et qui ne savaient qu'en penser. Ces pierres tombèrent si rapidement, qu'elles firent en tombant une fosse, où leur bruit et leur flamme cessant, les spectateurs se hasardèrent d'en approcher, et de les examiner de prés. En suite de cela on les transporta à Vérone, où elles sont dans l'Académie de cette Ville, qui en a envoyé des morceaux en divers endroits, et un entr'autres à Monsieur Morosini, Ambassadeur de Venise, qui me l'a donné pour le faire voir à cette docte Assemblée, afin qu'elle l'examine, et en donne son avis. Cela dit'on, prit la pierre, et l'on la considéra fort curieusement. On vit qu'elle était de couleur jaunâtre, fort aisée à pulvériser, et qu'elle sentait le soufre. Périandre après cela demanda à toute l'Assemblée quelle était son opinion sur ce sujet. Chacun en parla diversement et en confusion : mais à la fin tous les sentiments furent réduits à trois principaux, dont le premier fut celui du Signor Adriano, qui parla de la forte ; Messieurs, dit-il, la croyance que j'ay que les Planètes sont des Globes terrestres, comme le nôtre, m'oblige aussi à croire que ces deux pierres sont deux fragments du Globe de la Lune, lesquels sont tombez sur le nôtre. Si ce que vous dites était véritable, interrompit Périandre, ces deux pierres auraient deu tomber perpendiculairement, et non pas de costé. La Lune estant en son couchant, répliqua l'Italien, et la terre en mouvement, aussi bien que la Lune, oula fut cause que ces pierres tombèrent collatéralement. J'ai leu, dit Oronte, que du temps d'Anaxagore, il tomba pareillement une pierre dans Athènes ; et comme ce Philosophe fut interrogé d'où cette pierre était venue ; il répondit qu'elle venait du Ciel, qui peut-être n'était qu'une vieille masure qui tombait en ruine. Cette plaisante imagination fit rire la compagnie, qui ne jugea pas à propos de plus contester cette opinion, qui se détruit aussi assez d'elle-même. C'est pourquoi Périandre reprenant la parole, dit qu'il croyait que ces pierres estaient deux foudres, qui avoient este transportez fort loin par un mouvement extraordinaire. Mais l'Italien repartit que le temps était serein, quand elles tombèrent, et que quand il tonne on entend le tonnerre de plus de huit lieues, ce qu'on n'avait point alors entendu : Outre cela, continua-t-il, ces pierres sont trop pesantes, pour croire que ce soient des foudres ; et elles venaient de trop hault, pour venir de si loin. Il se peut faire, repartit Lisimon, que ces foudres ont este formez extraordinairement hault : que la matière, dont ils sont composés, a este subtilisée et esleuée à ce point par une très grande agitation ; et puis ensuite qu'elle s'est ramassée et changée en pierre par une autre agitation encore plus violente. Il se peut faire aussi que ce mouvement continuant les a jetées fort loin ; et la pesanteur de ces pierres ne doit point faire paraitre la chose impossible ; puis que cela a pu provenir de ce qu'il y avait là beaucoup d'action avec beaucoup de matière. Il y a apparence, poursuivit Eusèbe, que tout est formé de la matière qui produit les métaux et les minéraux ; mais qu'il y en a plus en de certaines choses qu'en d'autres : Il est probable aussi que cette matière est mise en action par le feu, et qu'elle prend toutes sortes de figures, suivant les moules qu'elle rencontre ; qu'elle est dans les plantes, et dans les animaux ; qu'elle les nourrit, et rend leurs semences fécondes ; et que même elle entre dans la composition des choses plus simples, comme sont les pierres, et les minéraux. Cela est si vrai, ajusta Lisimon, qu'un jour je tirai d'abord du cuivre d'un peu de sable ; en suite de cela j'en tirai de l'argent, et puis de l'or très fin ; mais si peu, que le jeu ne vaudrait pas la chandelle, si l'on en voulait continuer le mestier. Cette expérience, repartit Périandre, prouve bien que la matière métallique est par tout ici-bas ; mais elle ne fait pas voir qu'elle ait formé là hault ces pierres, qui sont tombées prés de Vérone. Au contraire, rien ne le prouve mieux, répondit Lisimon ; car comme cette matière n'est autre chose qu'un Esprit volatil, qui est épandu par tout, il se peut faire qu'une grande quantité de ces Esprits ayant este eleués très hault, ils furent comprimez par une puissante agitation, où l'Esprit acide ayant accroché le volatil avec lui, il s'en forma des pierres, qu'un mouvement extraordinaire enflamma et transporta fort loin ; et c'est aussi la raison pourquoi ces pierres sentaient le soufre. Puis que la Chimie peut bien faire des pierres, poursuivit Eusèbe, ainsi que j'en ay moi-même fait l'expérience, par le moyen d'une poudre qui se pétrifie dans l'eau, la nature en pourra bien faire aussi dans l'air, par le moyen d'une matière disposée à cela. En effet, quand les Esprits volatils, et les petits corps acides sont mêlez dans une certaine quantité de terre morte, liée d'un peu de phlegme, si les corps acides sont en plus grande quantité, et si par une puissante agitation ils viennent à embarrasser, où pour mieux dire, à arrêter le mouvement des Esprits volatils ; si avec cela le mouvement même de la matière agitée, où quel qu’autre cause inconnue, vient à resserrer cette matière ; et à la réduire en moindre volume, il se fait alors une chose dure et solide ; il se fait du bois, de la pierre, ou du métail, selon que la matière y est disposée : Et c'est, continua-t-il, ce qui est arrivé dans le fait dont il est question ; car il se peut faire que quelques exhalaisons, esleuées en grande quantité, contenaient beaucoup de ces Esprits minéraux et volatilisés par l'action du feu, lesquels estans agités et resserrés, s'accrochèrent à quantité de terre liée de phlegme, et par conséquent produisirent de grosses pierres. Cependant parce qu'il y avait aussi beaucoup d'Esprits mobiles, qui sont les causes de la lumière et de la chaleur, c'est ce qui mit ces pierres en feu ; et leur donna l'odeur de soufre, qui comme vous scauez, provient d'un certain mélange de ces Esprits avec la terre commune. Quand Eusèbe eut parlé, une bonne partie de la Compagnie témoigna estre de son sentiment, et le confirma, où par des raisons, où par des expériences, qui toutes revenaient à ce que Périandre, Eusèbe, et Lisimon avoient dit ; et l'on allait conclure cette matière, lors que Polidor prenant la parole dit, qu'il ne pouvait estre de l'opinion de ces Messieurs ; mais que plutôt il croyait que ces pierres n'estaient autre chose qu'une éructation, où pour mieux dire des morceaux d'une montagne, détachés par la violence d'une secousse extraordinaire, que des feux souterrains auraient causée. Ce que vous dites aurait quelque apparence, répondit Périandre, s'il y avait près de Vérone quelque montagne, qui eut pu souffrir une semblable éructation, et qui eut la réputation d'avoir des feux souterrains capables de causer de telles secousses : mais tout le monde sçait qu'il n'y en a point dans ce pais là ; ainsi vôtre opinion ne peut subsister avec cette difficulté si mal aisée à résoudre : De dire aussi que ces ébranlements soient provenus du Mont Vésuve, ou du Mont Etna, c'est ce qui n'a point d'apparence non plus ; parce que ces montagnes estant plus de cent cinquante lieues loin de Vérone, cette distance est trop grande, pour croire qu'elles aient produit cet effet. Vôtre objection est forte, répliqua Polidor ; et il semble qu'on n'y puisse pas répondre : néanmoins on vous peut dire, que les vents ou les feux souterrains ont pu causer un violent ébranlement de terre en ces quartiers là ; et par ce moyen secouer si bien cette montagne, que des morceaux s'en détachèrent, et furent poussés très loin par la violence de la secousse. Je ne suis pourtant pas si esclave de mes sentiments, adjousta-t'il, que je ne les quitte volontiers pour suivre ceux de la Compagnie, particulièrement sur un fait comme celui-ci, où il n'y a pas bien des raisons à opposer, ni des armes pour se défendre contre la multitude. Ainsi Polidor acquiesça modestement au sentiment de Périandre, qui toutefois approuva son opinion, la jugea belle et recevable, dit qu'elle pouvait estre appuyée, et qu'il en avait eu quelque idée qu'il pourrait éclaircir avec le temps. Il dit aussi que s'il combattait les opinions des autres, c'était afin d'éclaircir les matières, et d'empêcher que la conversation ne tombât. Vôtre prudence ne paroist pas moins en cela que vôtre doctrine, interrompit Oronte ; ainsi pour suivre vôtre exemple, et pour rendre la Conférence plus agréable par la diversité des sentiments, je veux dire aussi ce que je pense du sujet dont il s'agit : Je crois avec vous, que ces pierres tombées du Ciel sont des foudres : on voit de tous cotez des pierres de foudre de toutes sortes de figures : quelques-uns les croient fossiles, et n'ajoutent pas beaucoup de foi aux relations, qui en exagèrent la cheutte ; et leur raison est, qu'on trouve plus de ces pierres en certains lieux qu'en d'autres, où les tonnerres ne sont pas moins fréquents. Quoi qu'il en soit, il y a apparence que celles-ci sont tombées des nués, où il s'en peut engendrer comme de la neige et de la grêle : mais il ne faut pas croire que ce soit le froid, qui congelant la matière pétrifiante, fasse les pierres : elles se forment de la même manière que les coquilles des œufs, les écailles des poissons, et les pierres dans la vessie : je veux dire que le feu y contribué, en consommant les parties inflammables, et ne laissant que la cendre et les parties solides. Eusèbe a eu raison de dire, que la Chimie nous fournit des exemples de concrétions, promptes et surprenantes ; et c'est d'elle seule qu'il faut apprendre la manière de leur génération. J'avoue que les Chimistes se trompent souvent en leur calcul, et qu'ils ne s'accordent pas en cette rencontre ; puis que les uns y attribuent au sel, ce que les autres donnent au soufre, cherchant tous diversement le principe de coagulation, tantôt dans l'un, et tantôt dans l'autre. Voilà mon sentiment, Messieurs, sur le sujet dont il s'agit. Votre sentiment n'est pas meilleur que celui des autres, repartit brusquement Pancrace ; vous estes tous fort éloignez de la vérité ; mais je ne m'en estonne pas, \emph{non datur omnibus sapere}. Ce plaisant début fit rire toute la Compagnie, et obligea Périandre de lui dire, qu'il leur ferait plaisir, s'il voulait dire quelque chose de meilleur. Puisque vous voulez bien apprendre, je veux bien vous découvrir les mystères de ma Philosophie, qui est toute divine. Sçachez donc que ces deux pierres tombées prés de Vérone ne sont point des morceaux d'une montagne, ni des foudres ordinaires, qui, comme vous sçauez, se forment autiperistatiquement par le choq des deux qualitez contraires, le chaud et le froid : ce sont véritablement des foudres ; mais ils n'ont point este formez naturellement ; et Dieu les a fait faire exprez par quelque démon de la Région ignée, afin de donner de la terreur à ceux qui les ont veus tomber, et les obliger à venir à résipiscence. Pancrace est si dévot, interrompit Oronte, qu'il a recours à Dieu en toutes choses. Vive Dieu, répondit Pancrace, ce que je dis est vrai ; ces foudres ne sont point naturels : il est aisé à le voir par toutes les circonstances qui ont accompagné leur chute : Sans doute que Dieu les a fait faire par quelqu'un les Ministres de sa vengeance ; ne sçauez-vous pas qu'il y a par tous des Esprits, qui sont prêts au moindre signe qu'il fait, d'exécuter tout ce qu'il ordonne ; et c'est pour cela aussi qu'on void quelquefois en l'air des choses si étonnantes, comme des Comètes, des dragons de feu, des batailles, et des foudres extraordinaires, tels que sont ces deux ici. C'est la vérité, Messieurs, dont vous nous éloignez trop avec vos faibles raisonnements, qui attribuent mal à propos à la matière et au mouvement, ce qui n'est deub qu'au seul moteur. C'est assez, Monsieur, lui repartit Périandre, et il n'est pas besoin d'employer toute vôtre Rhétorique pour nous persuader vôtre opinion ; nous croyons avec vous que Dieu punit les coupables, et qu'il les aduertit quelquefois par des signes extraordinaires. L'histoire sainte et profane contiennent une infinité d'exemples de cette vérité : mais vous nous pardonnerez, s'il vous plaît, si contre votre sentiment nous croyons qu'il n'est pas nécessaire d'avoir recours à Dieu, pour expliquer ce qui arrive quelquefois, quand on le peut faire par les seules lois de la nature. On sçait bien que c'est Dieu qui fait tout, qui anime tout, et qui est cause par la vertu de son concours que tout agit ici-bas ; mais vous devez sçavoir aussi, que quand on raisonne Physiquement des choses, et qu'on en cherche la raison dans l'ordre que Dieu lui-même leur a établi pour opérer, ce que nous appelons nature, il n'est pas besoin alors de les attribuer à Dieu, si ce n'est comme cause première et générale : Il faut seulement les attribuer aux causes secondes et particulières, qui sont les déterminations de la matière, et les divers mouvements qu'elle souffre ; auxquelles causes Dieu lui-même, comme je vous ay dit, a donné des loi pour agir ; et c'est suivant ces loi que nous tâchons de donner la raison de tout ce qui arrive dans le monde. Que si quelquefois il arrive des choses à qui l'on ne puisse appliquer ces loi naturelles ; alors nous confessons que c'est un prodige et un coup de la main de Dieu, qui aduertit, ou qui chastie les hommes : mais quand on veut rendre une raison naturelle des choses, comme en ce fait ici, il n'est pas besoin de croire avec vous qu'elles viennent immédiatement de Dieu, comme un signe de sa colère et de sa justice.
+\clearpage
+\end{document}
