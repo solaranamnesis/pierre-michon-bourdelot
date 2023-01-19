@@ -2,7 +2,7 @@
 
 Public Domain Works of Pierre Michon Bourdelot (1610 - 1684)
 
-## De deux pierres tombées du Ciel prés de Verone, diverses opinions là-dessius.
+## De deux pierres tombées du Ciel prés de Vérone, diverses opinions là-dessous.
 
 (Extrait de _Conversations tireés de l'Academie de monsieur l'abbé Bourdelot contenant diverses recherches et observations physiques. Par le sieur Le Gallois_)
 
